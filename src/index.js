@@ -1,7 +1,7 @@
 import generateCover from "./sitecover/sitecover.js";
 import siteload from "./siteload/siteload.js";
-import {siteLoadStyle} from "./siteload/siteload.js";
-import {coverStyle} from "./sitecover/sitecover.js";
+import {siteLoadStyleTags} from "./siteload/siteload.js";
+import {coverStyleTags} from "./sitecover/sitecover.js";
 
 coverStyleTags.turnOn();
 generateCover();
