@@ -12,7 +12,7 @@ export const siteLoadStyleTags=(function(){
 export default function pageload(){
     const content=document.querySelector("#content");
     content.appendChild(generateHeader());
-    content.appendChild(generateNav());
+   // content.appendChild(generateNav());
     const main=document.createElement("main");
     content.appendChild(main);
     content.appendChild(generateFooter());
@@ -40,7 +40,9 @@ function generateHeader(){
     h1.appendChild(br);
     h1.appendChild(span);
     overlay.appendChild(h1);
+    overlay.appendChild(generateNav());
     header.appendChild(overlay);
+    
 
     return header;
 }

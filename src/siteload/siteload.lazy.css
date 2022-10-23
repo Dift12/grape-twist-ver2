@@ -34,18 +34,24 @@ ul{
 
 header{
     background-image: url(./giphy.gif);
-    background-size: contain;
+    background-size: auto;
     background-repeat: repeat;    
-    height: 15vh;
+    height: 20vh;
 }
 
 .header-overlay{
-    background-color: rgba(0, 0, 0, 0.9);
-    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.82);
+    height: 20vh;
+
+  
+
+    box-shadow: inset 0px -23px 25px 21px #000000;
+
 
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 h1{
@@ -58,12 +64,12 @@ h1{
 
     margin: 0px;
     padding: 0px;
-    font-size: 2vw;
-    color: white;
-
-/*    font-style: italic; */
-
+    font-size: 20px;
     color: var(--brand);
+
+    padding: 20px;
+
+    flex-grow: 1;
 
 }
 
@@ -73,9 +79,10 @@ h1{
 }
 
 nav{
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
-    background-color: black;
+    flex-grow: 1;
+    
+    background-color: rgba(0, 0, 0, 0.9);
+
     padding: 20px;
 
     position: sticky;
@@ -91,6 +98,10 @@ ul,li{
     justify-content: space-evenly;
 }
 
+nav ul li a{
+    border-right:1px solid grey ;
+}
+
 li > a {
     color: white;
     text-decoration: none;
@@ -103,7 +114,7 @@ li > a {
     letter-spacing: 4px;
   }
   
-  li > a::after {
+ li > a::after {
     content: "";
     display: block;
     margin: auto;
@@ -114,7 +125,7 @@ li > a {
     
   }
   
-  li > a:hover::after, li > a.active-nav::after {
+   li > a:hover::after, li > a.active-nav::after {
     width: 100%;
     background: var(--accent);
   }
@@ -131,74 +142,6 @@ main{
 }
 
 
-.home-principal{
- display: flex;
- flex-direction: column;
- align-items: center;
- padding: 20px;
- gap: 30px;
- border: 1px solid var(--brand);
-}
-
-.video-cont{
-    position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding-top: 56.25%;
-}
-
-.video-cont iframe{
-    
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-      
-}
-
-
-.home-principal h2{
-    color: var(--brand);
-    text-transform: uppercase;
-    letter-spacing: 10px;
-}
-
-.home-section {
-
-
-
-flex-grow: 1;
-
-border: 1px solid var(--titles);
-padding: 20px;
-}
-
-
-.home-section h2{
-  
-  
-    text-align: center;
-    margin-bottom: 45px;
-    color: var(--titles);
-    text-transform: uppercase;
-    letter-spacing: 10px;
-}
-
-
-
-
-.section-card{
-    color: white;
-    font-family: monospace;
-    font-size: 16px;
-    letter-spacing: 2px;
-
-   text-transform: uppercase;
-
-}
 
 
 
