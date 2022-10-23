@@ -1,6 +1,6 @@
 import coverstyles from "./coverstyle.lazy.css";
 
-export const coverStyle=(function(){
+export const coverStyleTags=(function(){
     const turnOn=()=>{coverstyles.use()};
     const turnOff=()=>{coverstyles.unuse()};
     return {turnOn,turnOff};

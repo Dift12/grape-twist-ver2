@@ -1,7 +1,7 @@
 
 import siteload from "./siteload.lazy.css"
 
-export const siteLoadStyle=(function(){
+export const siteLoadStyleTags=(function(){
     const turnOn=()=>{siteload.use()};
     const turnOff=()=>{siteload.unuse()};
     return {turnOn,turnOff};
