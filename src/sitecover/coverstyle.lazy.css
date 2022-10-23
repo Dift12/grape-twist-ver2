@@ -1,0 +1,50 @@
+html,body{
+    height: 100%;
+    margin: 0px;
+}
+
+
+
+header{
+    background-image: url(../siteload/giphy.gif);
+    background-size: contain;
+    background-repeat: repeat;    
+    height: 100vh;
+}
+
+.header-overlay{
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+
+    font-family: 'BodoniFLF';
+    font-weight: lighter;
+    letter-spacing: 10px;
+
+    margin: 0px;
+    padding: 0px;
+    font-size: 7vw;
+    color: white;
+
+/*    font-style: italic; */
+
+    color: var(--brand);
+
+}
+
+.accent{
+    color: var(--accent);
+
+}
+
+button{
+    background-color: red;
+}

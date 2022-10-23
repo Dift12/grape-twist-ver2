@@ -1,5 +1,13 @@
 
-import "./siteload.css"
+import siteload from "./siteload.lazy.css"
+
+export const siteLoadStyle=(function(){
+    const turnOn=()=>{siteload.use()};
+    const turnOff=()=>{siteload.unuse()};
+    return {turnOn,turnOff};
+})();
+
+
 
 export default function pageload(){
     const content=document.querySelector("#content");
