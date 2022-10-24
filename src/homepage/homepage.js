@@ -36,7 +36,7 @@ export default function generateHomePage(){
     principal.appendChild(iframeCont);
 
 
-
+    //PRESENTATION
 
     const presentationCard=document.createElement("div");
     presentationCard.classList.add("home-section");
@@ -60,6 +60,9 @@ export default function generateHomePage(){
     presentationCard.appendChild(presentationTitle);
     presentationCard.appendChild(presentationText);
 
+
+
+  
     main.appendChild(presentationCard);
     main.appendChild(principal);
 

@@ -1,0 +1,47 @@
+:root{
+    --brand:#feb914;
+    --accent: #fe8826;
+    --links:#2c9fa2;
+    --titles:#b21236;
+}
+
+@font-face {
+    font-family: 'BodoniFLF';
+    src: url('../shared-fonts/BodoniFLF-Roman.woff2') format('woff2'),
+        url('../shared-fonts/BodoniFLF-Roman.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+.home-section {
+
+flex-grow: 1;
+border: 1px solid var(--titles);
+padding: 20px;
+
+}
+
+
+.home-section>h2{
+    text-align: center;
+    margin-bottom: 45px;
+    color: var(--titles);
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+
+
+
+.section-card{
+    color: white;
+    font-family: monospace;
+    font-size: 16px;
+    letter-spacing: 2px;
+     text-transform: uppercase;
+
+}

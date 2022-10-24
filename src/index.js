@@ -1,9 +1,12 @@
 import generateCover from "./sitecover/sitecover.js";
 import siteload from "./siteload/siteload.js";
+import generateAboutPage from "./about/about.js";
+
 import {siteLoadStyleTags} from "./siteload/siteload.js";
 import {coverStyleTags} from "./sitecover/sitecover.js";
 
 import { homeStyleTags } from "./homepage/homepage.js";
+import { aboutStyleTags } from "./about/about.js";
 
 import generateHomePage from "./homepage/homepage.js";
 
@@ -13,7 +16,7 @@ generateCover();
 const button=document.querySelector("button");
 const content=document.querySelector("#content");
 
-let mainExist="";
+let mainExist;
 
 button.onclick= () => {
     content.innerHTML="";
@@ -22,10 +25,19 @@ button.onclick= () => {
     siteLoadStyleTags.turnOn();
     siteload();
 
+    /*
+    mainExist=document.querySelector("main");
 
-    homeStyleTags.turnOn();
-    generateHomePage();
+    const links=document.querySelectorAll("nav a");
+
+  */
+    aboutStyleTags.turnOn();
+    generateAboutPage();
+    //homeStyleTags.turnOn();
+    //generateHomePage();
 }
+
+
 
 
 
