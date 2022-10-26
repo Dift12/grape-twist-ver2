@@ -57,6 +57,8 @@ function generateNav(){
     
     threeLinkGenerator(ul,"home","about","contact");
 
+    
+
     nav.appendChild(ul);
 
     return nav;
