@@ -47,16 +47,23 @@ function generateEvents(){
 
     let value=e.target.textContent;
 
+    const home=document.querySelector("main .home-principal");
+    const about=document.querySelector("main #about");
+    const contact=document.querySelector("main .contact-card");
+
 
     if(value=="home"){
+      if(home) {return} //AVOIDS RUNNING FUNCTIONS IF THE ELEMENTS ALREADY EXIST IN THE DOM;
       main.innerHTML="";
       determineStyle(value);
       generateHomePage();
     } else if(value=="about"){
+      if(about){return}
       main.innerHTML="";
       determineStyle(value);
       generateAboutPage()
     } else {
+      if(contact){return};
       main.innerHTML="";
       determineStyle(value);
       generateContactPage()
@@ -89,3 +96,5 @@ function determineStyle(value){
     
   }
 }
+
+
