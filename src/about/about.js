@@ -16,6 +16,7 @@ export default function generateAboutPage(){
    const card2=document.createElement("div");
    const card3=document.createElement("div");
 
+   card1.id="about"
    card1.classList.add("home-section");
    card2.classList.add("home-section");
    card3.classList.add("home-section");
