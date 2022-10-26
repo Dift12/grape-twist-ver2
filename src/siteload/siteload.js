@@ -9,6 +9,8 @@ export const siteLoadStyleTags=(function(){
 
 
 
+
+
 export default function pageload(){
     const content=document.querySelector("#content");
     content.appendChild(generateHeader());

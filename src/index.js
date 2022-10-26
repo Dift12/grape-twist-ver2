@@ -31,8 +31,11 @@ button.onclick= () => {
     const links=document.querySelectorAll("nav a");
 
   */
-    aboutStyleTags.turnOn();
-    generateAboutPage();
+
+    
+
+   //  aboutStyleTags.turnOn();
+    //generateAboutPage();
     //homeStyleTags.turnOn();
     //generateHomePage();
 }
