@@ -3,6 +3,21 @@ html,body{
     margin: 0px;
 }
 
+:root{
+    --brand:#feb914;
+    --accent: #fe8826;
+    --links:#2c9fa2;
+    --titles:#b21236;
+}
+
+@font-face {
+    font-family: 'BodoniFLF';
+    src: url('../shared-fonts/BodoniFLF-Roman.woff2') format('woff2'),
+        url('../shared-fonts/BodoniFLF-Roman.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
 
 
 header{
@@ -20,6 +35,11 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 h1{
@@ -47,5 +67,17 @@ h1{
 }
 
 button{
-    background-color: red;
+    text-transform: uppercase;
+    font-family: monospace;
+    font-weight: bolder;
+    letter-spacing: 4px;
+
+
+    background-color: rgba(0, 0, 0, 0.8);
+    border:1px solid var(--titles);
+    color: var(--titles);
+
+    padding: 20px;
+    cursor: pointer;
 }
+
