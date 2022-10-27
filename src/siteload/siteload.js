@@ -37,8 +37,8 @@ function generateHeader(){
     span.classList.add("accent");
 
     span.textContent="music";
-    h1.textContent=`grape twist`;
-    h1.translate="no";
+    h1.textContent=`grape twist`;    
+    h1.translate=false;
 
     h1.appendChild(br);
     h1.appendChild(span);
