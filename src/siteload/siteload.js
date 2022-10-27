@@ -38,6 +38,7 @@ function generateHeader(){
 
     span.textContent="music";
     h1.textContent=`grape twist`;
+    h1.translate="no";
 
     h1.appendChild(br);
     h1.appendChild(span);
