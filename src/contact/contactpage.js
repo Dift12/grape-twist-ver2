@@ -32,9 +32,9 @@ export default function generateContactPage(){
     const instagram=new Image();
 
     youtube.src=youtubeLogo;
-    youtube.alt="Youtube logo";
+   
     instagram.src=instagramLogo;
-    instagram.alt="Instagram Logo";
+    
 
 
 
